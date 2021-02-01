@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "bama_price",
+  "description": "This extension unblure price in bama site",
+  "version": "0.1",
+
+  "icons": { "16": "bama_16.png",
+           "48": "bama_48.png",
+          "128": "bama_128.png" },  
+
+  "content_scripts": [
+    {
+      "matches": ["https://bama.ir/car/*"],
+      "js": ["undead.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
